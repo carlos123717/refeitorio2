@@ -1,0 +1,18 @@
+
+
+from django.shortuvts impor render , redirect
+from .forms import UsuarioFORM
+
+
+
+#Create your views here
+def new_aluno(request):
+     form= Alunoforms(request.POST, request.FILES)
+    if request.method == "POST" :
+    #form =Alunoforms(request.post,request.FILES)
+    if form.is_valid():
+     aluno=form.save()
+     aluno.save()
+    form={'form'}
+ context={'form':form 'aluno':alunos}
+    return render (request,'refeitorio/home.html', context ),

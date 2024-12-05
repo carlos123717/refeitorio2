@@ -1,0 +1,9 @@
+from django.urls import path
+from django.contrib.auth import views as auth_views
+
+urlspatterns=[
+     path ('login/', auth_views.LoginView.as_view(
+     template_name ='use/login.html
+  ), name='login'),
+  path('logout/
+
